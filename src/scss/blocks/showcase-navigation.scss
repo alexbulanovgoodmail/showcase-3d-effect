@@ -1,0 +1,55 @@
+.showcase-navigation {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  &__button {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    cursor: pointer;
+
+    &::before {
+      content: '?';
+      position: absolute;
+      top: 50%;
+      font-family: 'Assassin', sans-serif;
+      font-size: 42px;
+      opacity: 0;
+      transition: opacity 0.75s ease-out;
+    }
+  }
+
+  &__button:hover,
+  &__button:focus {
+    &::before {
+      opacity: 0.25;
+    }
+  }
+
+  &__button_prev {
+    left: 0;
+
+    &::before {
+      left: 50px;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__button_next {
+    right: 0;
+
+    &::before {
+      right: 50px;
+      transform: rotate(90deg);
+    }
+  }
+
+  &__button.swiper-button-disabled {
+    display: none;
+  }
+}
