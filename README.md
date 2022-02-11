@@ -1,2 +1,6 @@
 # showcase-3d-effect
-3D сцена с использованием HTML, CSS и JavaScript
+Учебный Проект
+
+- 3D сцена с использованием HTML, CSS и JavaScript
+
+  [смотреть](https://showcase-3d-effect.netlify.app/)
